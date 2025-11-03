@@ -1,18 +1,15 @@
 :root {
-  /* Основные цвета тёмной темы (по умолчанию) */
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --bg-color: #000028;
-  --title-decor-text: #000028;
-  --decor-color: #ff0070;
-  --decor-color-hover: rgba(255, 0, 112, 0.4);
-  
-  /* Шрифты */
-  --font-family: 'IBM Plex mono', monospace;
-  --font-size: 18px;
-  --line-height: 1.3;
-  
-  /* Фоны */
-  --bg-image: url('../images/cover-image-dark.png');
+  --background: #000028;
+  --accent: #ff0070;
+  --text: #f1b2ce;
+  --image: url("../images/cover-image-dark.png");
+  --header: #db00ff;
+}
+
+ .main__section-title {
+  color: var(--accent);
+}
+
+ .title-accent {
+  color: var(--background);
 }

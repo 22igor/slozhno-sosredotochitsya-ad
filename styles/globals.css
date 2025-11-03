@@ -1,23 +1,14 @@
-/* Базовые стили и сброс */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  block-size: 100%;
-}
-
 body {
-  min-inline-size: 100%;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
   margin: 0;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  min-block-size: 100vh;
+  padding: 0;
 }
 
 h1,
@@ -47,23 +38,9 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  background: transparent;
-  border: none;
-  text-decoration: none;
 }
 
-button:focus {
-  outline: none;
-}
-
-button:focus-visible {
-  outline: 1px solid currentColor;
-}
-
-a:focus {
-  outline: none;
-}
-
-a:focus-visible {
-  outline: 1px solid currentColor;
+form,
+input {
+  appearance: none;
 }

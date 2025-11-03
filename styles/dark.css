@@ -1,21 +1,30 @@
 :root.theme-dark {
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --decor-color: #FF0070;
   --background: #000028;
-
-  --bg-image: url(../images/cover-image-dark.png);
+  --accent: #ff0070;
+  --text: #f1b2ce;
+  --image: url("../images/cover-image-dark.png");
+  --header: #db00ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #FF0070;
-    --title-color: #DB00FF;
-    --text-color: #F1B2CE;
-    --decor-color: #FF0070;
-    --background: #000028;
+.theme-dark .header__record-decoration {
+  display: flex;
+}
 
-    --bg-image: url(../images/cover-image-dark.png);
-  }
+.theme-dark .header__theme-menu-button,
+.theme-dark .main__section-title {
+  color: var(--accent);
+}
+
+.theme-dark .title-accent {
+  color: var(--background);
+}
+
+.theme-dark .header::before,
+.theme-dark .footer::before,
+.theme-dark .header::after,
+.theme-dark .footer::after,
+.theme-dark .header__theme-menu-button,
+.theme-dark .header__theme-menu-button:hover::after,
+.theme-dark .header__theme-menu-button_active::after {
+  border-color: var(--accent);
 }
