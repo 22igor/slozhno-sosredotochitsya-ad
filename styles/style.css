@@ -461,20 +461,6 @@ a:focus-visible {
   }
 }
 
-/* Базовый цвет для светлой темы */
-.section__title {
-  color: #353430;
-}
-
-.theme-dark .section__title {
-  color: #FF0070;
-}
-@media (prefers-color-scheme: dark) {
-  .theme-auto .section__title {
-    color: #FF0070;
-  }
-}
-
 /* Для авто-темы при системных настройках "светлая" */
 @media (prefers-color-scheme: light) {
   .theme-auto .section__title {
