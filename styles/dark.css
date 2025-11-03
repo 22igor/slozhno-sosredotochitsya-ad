@@ -1,16 +1,30 @@
-/* Принудительная тёмная тема */
 :root.theme-dark {
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --bg-color: #000028;
-  --title-decor-text: #000028;
-  --decor-color: #ff0070;
-  --decor-color-hover: rgba(255, 0, 112, 0.4);
-  --bg-image: url('../images/cover-image-dark.png');
+  --background: #000028;
+  --accent: #ff0070;
+  --text: #f1b2ce;
+  --image: url("../images/cover-image-dark.png");
+  --header: #db00ff;
 }
 
-/* В темной теме заголовки секций цвета #FF0070 */
-.theme-dark .section__title {
-  color: #FF0070;
+.theme-dark .header__record-decoration {
+  display: flex;
+}
+
+.theme-dark .header__theme-menu-button,
+.theme-dark .main__section-title {
+  color: var(--accent);
+}
+
+.theme-dark .title-accent {
+  color: var(--background);
+}
+
+.theme-dark .header::before,
+.theme-dark .footer::before,
+.theme-dark .header::after,
+.theme-dark .footer::after,
+.theme-dark .header__theme-menu-button,
+.theme-dark .header__theme-menu-button:hover::after,
+.theme-dark .header__theme-menu-button_active::after {
+  border-color: var(--accent);
 }
